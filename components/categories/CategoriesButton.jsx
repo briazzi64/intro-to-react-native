@@ -2,10 +2,10 @@ import { ScrollView, StyleSheet, Button } from 'react-native';
 
 export default function Categories({categories, selectedCategory, setSelectedCategory}) {
   return (
-    <ScrollView contentContainerStyle={styles.categoriesSection} horizontal={true}>
+    <ScrollView style={styles.scrollViewContainer} contentContainerStyle={styles.categoriesSection} horizontal={true}>
       {categories.map(function (category, index) {
         return (
-          <Button key={index} title={category} color={selectedCategory === category ? "#fff" : "transparent"} onPress={() => setSelectedCategory(category)} />
+          <Button key={index} title={category} color={selectedCategory === category ? "red" : "blue"} onPress={() => setSelectedCategory(category)} />
         );
       })}
     </ScrollView>
@@ -15,6 +15,8 @@ export default function Categories({categories, selectedCategory, setSelectedCat
 const styles = StyleSheet.create({
   categoriesSection: {
     flexDirection: 'row',
-    marginBottom: 15
+    marginBottom: 15,
+    height: 40,
+    marginBottom: 20,
   }
 });
