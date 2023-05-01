@@ -8,6 +8,7 @@ import Search from "./components/search/Search";
 import CategoriesAsButtons from "./components/categories/CategoriesButton";
 import Categories from "./components/categories/Categories";
 import Products from "./components/products/Products";
+import Products2Coulmn from "./components/products/Products2Coulmn";
 
 import Constants from 'expo-constants';
 
@@ -48,6 +49,7 @@ export default function App() {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory} /> */}
       {/* <Products products={products} selectedCategory={selectedCategory} search={search} /> */}
+      {/* <Products2Coulmn products={products} selectedCategory={selectedCategory} search={search} /> */}
       {/* <StatusBar style="light" /> */}
     </View>
   );

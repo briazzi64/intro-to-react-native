@@ -5,10 +5,10 @@ import { View, Image, StyleSheet, Text } from 'react-native';
 export default function Header() {
   return (
     <View style={styles.header}>
-        <Text style={styles.headerText}>
-            StirTrek Shop
-        </Text>
-        <Image style={styles.logo} source={require('../../assets/icon.png')} />
+      <Text style={styles.headerText}>
+        StirTrek Shop
+      </Text>
+      <Image style={styles.logo} source={require('../../assets/icon.png')} />
     </View>
   );
 }
