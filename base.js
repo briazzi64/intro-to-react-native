@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { StatusBar } from 'expo-status-bar';
 import { View, StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
 
 import Header from "./components/header/Header";
 import MyStore from "./components/myStore/MyStore";
@@ -9,8 +10,6 @@ import CategoriesAsButtons from "./components/categories/CategoriesButton";
 import Categories from "./components/categories/Categories";
 import Products from "./components/products/Products";
 import Products2Coulmn from "./components/products/Products2Coulmn";
-
-import Constants from 'expo-constants';
 
 export default function App() {
   const [search, onChangeSearch] = useState("");
